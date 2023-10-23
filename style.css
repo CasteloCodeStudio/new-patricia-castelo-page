@@ -1,0 +1,182 @@
+*{
+    border: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("./retrato-de-uma-mulher-aplicando-maquiagem-com-um-pincel-de-maquiagem.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-color: #eceee7;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+.card-top{
+    display: flex;
+    width: 80%;
+    background-color: rgb(27, 58, 83,0.5);
+    color: white;
+    border-radius: 20px;
+    padding: 0 20px;
+    justify-content:center ;
+    margin-bottom: 40px;
+}
+
+.who-am-i{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.whatsapp-button{
+    background-color: rgb(35, 184, 35);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.whatsapp-button:hover{
+    cursor: pointer;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.natura-card, .avon-card, .valvit-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(27, 58, 83, 0.5);
+color: white;
+padding: 0 10px;
+border-radius: 20px;
+padding-bottom: 20px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 80px;
+}
+
+.footer{
+    color: white;
+}
+
+
+@media only screen and (max-width: 1035px)  {
+
+
+    h1{
+        font-size: 30px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .natura-card, .avon-card, .valvit-card{
+        margin: 20px;
+        background-color: rgb(27, 58, 83,0.9)
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        background-image: url('./retrato-de-uma-mulher-aplicando-maquiagem-com-um-pincel-de-maquiagem.jpg'), url('./mulher2.jpg'),url('./mulher3.jpg');
+        background-size:800px;
+        background-position: top, bottom, center;
+        background-repeat:no-repeat,no-repeat;
+        background-color: white;
+
+    }
+}
+
+@media only screen and (max-width: 650px)  {
+
+
+    h1{
+        font-size: 20px;
+    }
+    .card-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding-bottom: 20px;
+        background-color: rgb(27, 58, 83,0.7);
+    }
+
+    .who-am-i, .contact{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .natura-card, .avon-card, .valvit-card{
+        margin: 20px;
+        background-color: rgb(27, 58, 83,0.7);
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        align-self: center;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+
+    body{
+        background-image: url('./retrato-de-uma-mulher-aplicando-maquiagem-com-um-pincel-de-maquiagem.jpg'), url('./mulher2.jpg'),url('./mulher3.jpg');
+        background-size:1000px;
+}
+
+}
+@media only screen and (max-width: 400px){
+    h1{
+        font-size: 15px;
+    }
+
+    .footer{
+        font-size: 13px;
+    }
+}
